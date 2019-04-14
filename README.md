@@ -14,15 +14,19 @@ If you are looking for ESP32 Arduino debugging, check out PlatformIO or VisualGD
 - Right click on "This PC" -> Properties    
 
     ![image](img/env1.jpg) 
+    
 - Go to "Advanced System Settings"  
 
     ![image](img/env2.jpg)  
+
 - Add a new environment variable called `IDF_PATH` pointing to esp-idf repository folder on your pc 
 
     ![image](img/IDF_PATH.jpg)  
+
 - go to `Path` variable and click Edit  
 
     ![image](img/win_path.jpg)  
+
 - Add a new value: `%IDF_PATH%\tools`   
 
     ![image](img/idf_py_path.jpg)   
@@ -47,6 +51,7 @@ to get the cmake, ninja build, openocd and all other tools needed to build, flas
 4. Open Zadig Tool and go to Options->List All Devices
 
  ![image](img/zadig1.png)
+
 5. Select the FT2232 channel you want to use as Jtag.
 In case of Wrover-Kit, is channel 0: “Dual RS232-HS (interface 0)”, according to Wrover-Kit schematic:
 
@@ -56,6 +61,7 @@ In case of Wrover-Kit, is channel 0: “Dual RS232-HS (interface 0)”, accordin
 6. Select WinUSB -> Click Replace Driver  
 
  ![image](img/zadig2.PNG)
+
 7. After operation completed, disconnect and reconnect the device to USB port
 8. In case that other channel (channel 1 in case of wrover-kit) is not detected as com port (used by esptool for flashing),
 you must enable the VCP mode on channel 1, this way:
@@ -69,9 +75,11 @@ Select “Load VCP” then click OK.
 1. Open this project in VsCode: Right click on the project folder->Open with Code
 
  ![image](img/OpenProject.jpg)
+
 2. If you installed the VsCode extensions properly, you should see the command buttons on the lower bar:
 
  ![image](img/bar.jpg)
+
 - You can use Py Build to build the project using Cmake
 - After build, you can flash the project to target using Py Flash command
 3. Happy Debugging:
