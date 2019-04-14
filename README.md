@@ -41,7 +41,8 @@ to get the cmake, ninja build, openocd and all other tools needed to build, flas
 1. Connect the Wrover Kit (or some other ft2232 debugger) o PC USB
 2. Install the FTDI drivers from https://www.ftdichip.com/Drivers/VCP.htm
 
- ![image](DeviceManager1.PNG)
+ ![image](img/DeviceManager1.PNG)
+
 3. Download Zadig tool from https://zadig.akeo.ie/
 4. Open Zadig Tool and go to Options->List All Devices
 
