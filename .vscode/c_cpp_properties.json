@@ -113,23 +113,6 @@
                 "${IDF_PATH}/components/bt/bluedroid/btc/profile/std/a2dp/include",
                 "${IDF_PATH}/components/bt/bluedroid/btc/profile/esp/include",
                 "${IDF_PATH}/components/bt/bluedroid/btc/profile/esp/blufi/include",
-                "${workspaceFolder}/components/mp3_decoder/include",
-                "${workspaceFolder}/components/http/include",
-                "${workspaceFolder}/components/fifo/include",
-                "${workspaceFolder}/components/controls/include",
-                "${workspaceFolder}/components/common/include",
-                "${workspaceFolder}/components/bt_speaker/include",
-                "${workspaceFolder}/components/audio_renderer/include",
-                "${workspaceFolder}/components/audio_player/include",
-                "${workspaceFolder}/build/include",
-                "${workspaceFolder}/build/include/config/freertos/vtasklist/include",
-                "${workspaceFolder}/main/include",
-                "${workspaceFolder}/components/web_radio/include",
-                "${workspaceFolder}/components/vector/include",
-                "${workspaceFolder}/components/url_parser/include",
-                "${workspaceFolder}/components/playlist/include",
-                "${workspaceFolder}/components/nghttp/port/include",
-                "${workspaceFolder}/components/nghttp/include",
                 ""
             ],
             "browse": {
@@ -246,23 +229,6 @@
                     "${IDF_PATH}/components/bt/bluedroid/btc/profile/std/a2dp/include",
                     "${IDF_PATH}/components/bt/bluedroid/btc/profile/esp/include",
                     "${IDF_PATH}/components/bt/bluedroid/btc/profile/esp/blufi/include",
-                    "${workspaceFolder}/components/mp3_decoder/include",
-                    "${workspaceFolder}/components/http/include",
-                    "${workspaceFolder}/components/fifo/include",
-                    "${workspaceFolder}/components/controls/include",
-                    "${workspaceFolder}/components/common/include",
-                    "${workspaceFolder}/components/bt_speaker/include",
-                    "${workspaceFolder}/components/audio_renderer/include",
-                    "${workspaceFolder}/components/audio_player/include",
-                    "${workspaceFolder}/build/include",
-                    "${workspaceFolder}/build/include/config/freertos/vtasklist/include",
-                    "${workspaceFolder}/main/include",
-                    "${workspaceFolder}/components/web_radio/include",
-                    "${workspaceFolder}/components/vector/include",
-                    "${workspaceFolder}/components/url_parser/include",
-                    "${workspaceFolder}/components/playlist/include",
-                    "${workspaceFolder}/components/nghttp/port/include",
-                    "${workspaceFolder}/components/nghttp/include",
                     ""
                 ]
             },
@@ -274,7 +240,8 @@
             "intelliSenseMode": "clang-x64",
             "cStandard": "c99",
             "cppStandard": "c++11",
-            "compilerPath": "c:/Program Files/Espressif/ESP-IDF Tools/tools/bin/xtensa-esp32-elf-gcc.exe"
+            "compilerPath": "c:/Program Files/Espressif/ESP-IDF Tools/tools/bin/xtensa-esp32-elf-gcc.exe",
+            "compileCommands": "${workspaceFolder}/build/compile_commands.json"
         }
     ],
     "version": 4

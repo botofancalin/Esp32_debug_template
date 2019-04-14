@@ -3,59 +3,19 @@
 	"configurations": [
 		{
 			"name": "OpenOCD Debug",
-			"type": "gdb",
-			"request": "attach",
-			"printCalls": true,
-			"executable": "${workspaceRoot}/build/thisProject.elf",
-			"target": ":3333",
-			"remote": true,
+            "type": "gdb",
+            "request": "attach",
 			"cwd": "${workspaceRoot}",
-			"autorun": [
-				// "interrupt",
-				// "monitor reset halt",
-				// "load",
+            "executable": "${workspaceRoot}/build/Esp32_debug_template.elf",
+            "target": ":3333",
+			"remote": true,
+			"preLaunchTask": "OpenOCD",
+            "gdbpath": "C:/Program Files/Espressif/ESP-IDF Tools/tools/bin/xtensa-esp32-elf-gdb.exe",
+            "autorun": [
+                "mon reset halt",
+                "flushregs",
 				"break app_main"
 			],
-			// "debugServerPath": "/usr/local/share/openocd",
-			// "debugServerArgs": "-s /home/fhfs/ESP/openocd-esp32/tcl -f /home/fhfs/ESP/openocd-esp32/esp32.cfg",
-			// "preLaunchTask": "OpenOCD",
-			// "preLaunchTask": "Build",
-			// "preLaunchTask": "Flash",
-			"gdbpath": "/home/fhfs/ESP/xtensa-esp32-elf/bin/xtensa-esp32-elf-gdb"
-			// "gdbpath": "C:/IoT/xtensa-esp32-elf/bin/xtensa-esp32-elf-gdb"
 		}
-		// ,
-		// {
-		//     "name": "GDB attached to OpenOCD",
-		//     "type": "cppdbg",
-		//     "request": "launch",
-		//     // "launchOptionType": "Local",
-		//     "stopAtEntry": false,
-		//     "launchCompleteCommand": "exec-run",
-		//     "MIMode": "gdb",
-		//     "miDebuggerPath": "${XtensaEsp32ELFBinPath}/xtensa-esp32-elf-gdb",
-		//     "program": "${workspaceRoot}/build/${projectname}.elf",
-		//     "setupCommands": [
-		//         {
-		//             "text": "target remote localhost:3333"
-		//         },
-		//         {
-		//             "text": "file ${workspaceRoot}/build/${projectname}.elf"
-		//         },
-		//         {
-		//             "text": "monitor reset halt"
-		//         }
-		//     ],
-		//     // "customLaunchSetupCommands": [
-		//     //     {"text": "monitor reset init"}
-		//     // ],
-		//     // "launchCompleteCommand": "exec-continue",
-		//     // "serverStarted": "Info\\ :\\ [\\w\\d\\.]*:\\ hardware",
-		//     // "filterStderr": true,
-		//     // "preLaunchTask": "Build",
-		//     // "preLaunchTask": "CBF",
-		//     "cwd": "${workspaceRoot}"
-		// }
 	]
 }
-//https://github.com/Microsoft/vscode-cpptools/blob/master/launch.md
