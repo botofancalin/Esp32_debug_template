@@ -5,8 +5,19 @@ A template project for debugginf esp-idf projects on VsCode
 1. Install git from https://git-scm.com/download/win
 2. Clone the esp-idf v3.2 branch using command:  
  `git clone --recursive -b release/v3.2 https://github.com/espressif/esp-idf.git`
-3. Add IDF_PATH and path to esp-idf\tools to system "path" environment variables 
-(see https://docs.espressif.com/projects/esp-idf/en/stable/get-started-cmake/add-idf_path-to-profile.html#add-paths-to-profile-windows-cmake )
+3. Add IDF_PATH and path to esp-idf\tools to system "path" environment variables:
+
+- Right click on "This PC" -> Properties
+ ![image](img/env1.jpg)
+- Go to "Advanced System Settings"
+ ![image](img/env2.jpg)
+- Add a new environment variable called `IDF_PATH` pointing to esp-idf repository folder on your pc 
+ ![image](img/IDF_PATH.jpg)
+- go to `Path` variable and click Edit 
+ ![image](img/win_path.jpg)
+- Add a new value: `%IDF_PATH%\tools`
+ ![image](img/idf_py_path.jpg)
+
 4. Install https://dl.espressif.com/dl/esp-idf-tools-setup-1.2.exe 
 to get the cmake, ninja build, openocd and all other tools needed to build, flash and debug the esp32 
 
