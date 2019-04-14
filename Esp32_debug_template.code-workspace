@@ -1,0 +1,40 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"actionButtons": {
+			"defaultColor": "#ff0034",
+			"commands": [
+				{
+					"name": "Py Menu",
+					"color": "lime",
+					"command": "idf.py menuconfig"
+				},
+				{
+					"name": "Py Build",
+					"color": "orange",
+					"command": "idf.py build"
+				},
+				{
+					"name": "Py Flash",
+					"color": "lime",
+					"command": "idf.py flash"
+				},
+				{
+					"name": "Py Monitor",
+					"color": "orange",
+					"command": "idf.py monitor"
+				},
+				{
+					"name": "Py clean",
+					"color": "white",
+					"command": "idf.py clean"
+				}
+			]
+		},
+		"terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe"
+	}
+}

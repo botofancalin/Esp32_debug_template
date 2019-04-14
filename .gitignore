@@ -1,2 +1,3 @@
 # ESP-IDF library 
 build
+.browse.*
