@@ -3,7 +3,7 @@ A template project for debugginf esp-idf projects on VsCode
 
 ## Get the tools ##
 1. Install git from https://git-scm.com/download/win
-2. Clone the esp-idf v3.2 branch using command: "git clone --recursive -b release/v3.2 https://github.com/espressif/esp-idf.git"
+2. Clone the esp-idf v3.2 branch using command: 'git clone --recursive -b release/v3.2 https://github.com/espressif/esp-idf.git'
 3. Add IDF_PATH and path to esp-idf\tools to system "path" environment variables
 4. Install https://dl.espressif.com/dl/esp-idf-tools-setup-1.2.exe 
 to get the cmake, ninja build, openocd and all other tools needed to build, flash and debug the esp32 
