@@ -1,0 +1,13 @@
+{
+	"isShellCommand": true,
+	"tasks": [
+		{
+			"taskName": "OpenOCD",
+			"suppressTaskName": true,
+			"command": "",
+			"args": [
+				"openocd -f interface/ftdi/esp32_devkitj_v1.cfg -f board/esp-wroom-32.cfg" //-c \"adapter_khz 3000\"
+			]
+		}
+	]
+}
