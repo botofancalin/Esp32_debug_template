@@ -10,14 +10,19 @@ A template project for debugginf esp-idf projects on VsCode
 3. Add IDF_PATH and path to esp-idf\tools to system "path" environment variables:
 
 - Right click on "This PC" -> Properties    
+
     ![image](img/env1.jpg) 
 - Go to "Advanced System Settings"  
+
     ![image](img/env2.jpg)  
 - Add a new environment variable called `IDF_PATH` pointing to esp-idf repository folder on your pc 
+
     ![image](img/IDF_PATH.jpg)  
 - go to `Path` variable and click Edit  
+
     ![image](img/win_path.jpg)  
 - Add a new value: `%IDF_PATH%\tools`   
+
     ![image](img/idf_py_path.jpg)   
 
 4. Install https://dl.espressif.com/dl/esp-idf-tools-setup-1.2.exe 
