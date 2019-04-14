@@ -12,26 +12,28 @@ to get the cmake, ninja build, openocd and all other tools needed to build, flas
 ## Get the IDE ##
 5. Install Visual Studio code from https://code.visualstudio.com/docs/?dv=win
 6. Install C/C++ Intellisense, VsCode Action Buttons and Native Debug extension on VsCode
-![image](img/VsCode_extensions.jpg)
+ ![image](img/VsCode_extensions.jpg)
 
 ## Set the drivers ##
 7. Connect the Wrover Kit (or some other ft2232 debugger) o PC USB
 8. Install the FTDI drivers from https://www.ftdichip.com/Drivers/VCP.htm
-![image](DeviceManager1.PNG)
+ ![image](DeviceManager1.PNG)
 9. Download Zadig tool from https://zadig.akeo.ie/
 10. Open Zadig Tool and go to Options->List All Devices
-![image](img/zadig1.png)
+ ![image](img/zadig1.png)
 11. Select the FT2232 channel you want to use as Jtag.
 In case of Wrover-Kit, is channel 0: “Dual RS232-HS (interface 0)”, according to Wrover-Kit schematic:
-![image](img/wrover_ft2232.PNG)
-12. Select WinUSB -> Click Replace Driver
-![image](img/zadig2.PNG)
+ ![image](img/wrover_ft2232.PNG)
+
+
+12. Select WinUSB -> Click Replace Driver  
+ ![image](img/zadig2.PNG)
 13. After operation completed, disconnect and reconnect the device to USB port
 14. In case that other channel (channel 1 in case of wrover-kit) is not detected as com port (used by esptool for flashing),
 you must enable the VCP mode on channel 1, this way:
 - On device manager, right click on “USB Serial Converter B” - >Properties ->Advanced
 Select “Load VCP” then click OK.
-![image](img/vcp.PNG)
+ ![image](img/vcp.PNG)
 
 ## Open the project ##
 
