@@ -41,3 +41,9 @@ Select “Load VCP” then click OK.
 
 1. Open this project in VsCode: Right click on the project folder->Open with Code
  ![image](img/OpenProject.jpg)
+2. If you installed the VsCode extensions properly, you should see the command buttons on the lower bar:
+ ![image](img/bar.jpg)
+- You can use Py Build to build the project using Cmake
+- After build, you can flash the project to target using Py Flash command
+3. Start Debugging:
+ !["image"](img/Esp32_win_gdb_debug.jpg)
