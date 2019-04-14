@@ -1,6 +1,7 @@
 # Esp32_debug_template
 A template project for debugginf esp-idf projects on VsCode
-Feel free to use this template as a base for new esp-idf projects
+
+### Feel free to use this template as a base for new esp-idf projects
 
 ## Get the tools ##
 1. Install git from https://git-scm.com/download/win
