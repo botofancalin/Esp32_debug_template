@@ -37,7 +37,7 @@ to get the cmake, ninja build, openocd and all other tools needed to build, flas
 
 ## Get the IDE ##
 1. Install Visual Studio code from https://code.visualstudio.com/docs/?dv=win
-2. Install `C/C++ Intellisense`, `VsCode Action Buttons` and `Native Debug` extensions on VsCode
+2. Install `C/C++`, `VsCode Action Buttons` and `Native Debug` extensions on VsCode
 
  ![image](img/VsCode_extensions.jpg)
 
