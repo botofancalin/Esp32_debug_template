@@ -14,7 +14,7 @@ If you are looking for ESP32 Arduino debugging, check out PlatformIO or VisualGD
 - Right click on "This PC" -> Properties    
 
     ![image](img/env1.jpg) 
-    
+
 - Go to "Advanced System Settings"  
 
     ![image](img/env2.jpg)  
@@ -80,8 +80,10 @@ Select “Load VCP” then click OK.
 
  ![image](img/bar.jpg)
 
-- You can use Py Build to build the project using Cmake
-- After build, you can flash the project to target using Py Flash command
+- You can use `Py Build` to build the project using Cmake and ninja build (faster than "make")
+- After build, you can flash the project to target using `Py Flash` command
+- After flashing, you can debug the project
+
 3. Happy Debugging:
 
  !["image"](img/Esp32_win_gdb_debug.jpg)
