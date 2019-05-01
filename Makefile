@@ -3,7 +3,7 @@
 # project subdirectory.
 #
 
-PROJECT_NAME := Esp32_debug_template
+PROJECT_NAME := $(notdir $(CURDIR))
 
 include $(IDF_PATH)/make/project.mk
 
