@@ -1,5 +1,7 @@
 # Esp32_debug_template
-This is a template project for debugging esp-idf projects on VsCode
+This is a tutorial for ESP32 Visual Studio Code setup  
+Also contain a template project with settings for ESP32 Visual Studio Code debug  
+for ESP-IDF projects.
 
 If you are looking for ESP32 Arduino debugging, check out PlatformIO or VisualGDB.
 
@@ -67,19 +69,19 @@ Select “Load VCP” then click OK.
 ## Get the IDE ##
 1. Install Visual Studio code from https://code.visualstudio.com/docs/?dv=win
 
-1. Open this project in VsCode: Right click on the project folder->Open with Code
+2. Open this project in VsCode: Right click on the project folder->Open with Code
 
  ![image](img/OpenProject.jpg)
 
-2. Open project Workspace
+3. Open project Workspace
 
  ![image](img/OpenWorkspace.jpg)
 
-3. Install required extensions Allow VsCode to install the required extensions
+4. Install required extensions Allow VsCode to install the required extensions
 
  ![image](img/InstallExtensions.jpg)
 
-4. Once the VsCode extensions are installed properly, you should see the command buttons on the lower bar:
+5. Once the VsCode extensions are installed properly, you should see the command buttons on the lower bar:
 
  ![image](img/bar.jpg)
 
@@ -95,6 +97,8 @@ Select “Load VCP” then click OK.
     Note: Use CTRL+C to close the monitor  
 - `Py Clean` : Clean the project.  
 
-3. Happy Debugging:
+6. To debug the project, follow this steps to start the debugger:   
 
  !["image"](img/Esp32_win_gdb_debug.jpg)
+
+ ##Happy Debugging
