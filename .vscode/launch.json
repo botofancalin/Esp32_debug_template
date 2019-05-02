@@ -4,14 +4,13 @@
 		{
 			"name": "OpenOCD Debug",
 			"type": "gdb",
-			"request": "attach",
+			"request": "launch",
+			"target": "${workspaceRoot}/build/${workspaceFolderBasename}.elf",
 			"cwd": "${workspaceFolder}",
-			"executable": "${workspaceRoot}/build/${workspaceFolderBasename}.elf",
-			"target": ":3333",
-			"remote": true,
 			"gdbpath": "C:/Program Files/Espressif/ESP-IDF Tools/tools/bin/xtensa-esp32-elf-gdb.exe",
 			"preLaunchTask": "OpenOCD",
 			"autorun": [
+			  "target remote :3333",
 			  "mon reset halt",
 			  "flushregs",
 			  "thb app_main",
