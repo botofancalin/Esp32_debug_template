@@ -1,4 +1,4 @@
-# Esp32_debug_template
+# ESP32 VsCode Setup & Debug
 This is a tutorial for ESP32 Visual Studio Code setup  
 Also contain a template project with settings for ESP32 Visual Studio Code debug  
 for ESP-IDF projects.
