@@ -34,13 +34,6 @@ If you are looking for ESP32 Arduino debugging, check out PlatformIO or VisualGD
 4. Install https://dl.espressif.com/dl/esp-idf-tools-setup-1.2.exe 
 to get the cmake, ninja build, openocd and all other tools needed to build, flash and debug the esp32 
 
-
-## Get the IDE ##
-1. Install Visual Studio code from https://code.visualstudio.com/docs/?dv=win
-2. Install `C/C++`, `VsCode Action Buttons` and `Native Debug` extensions on VsCode
-
- ![image](img/VsCode_extensions.jpg)
-
 ## Set the drivers ##
 1. Connect the Wrover Kit (or some other ft2232 debugger) o PC USB
 2. Install the FTDI drivers from https://www.ftdichip.com/Drivers/VCP.htm
@@ -71,18 +64,36 @@ Select “Load VCP” then click OK.
  ![image](img/vcp.PNG)
 
 ## Open the project, build, debug ##
+## Get the IDE ##
+1. Install Visual Studio code from https://code.visualstudio.com/docs/?dv=win
 
 1. Open this project in VsCode: Right click on the project folder->Open with Code
 
  ![image](img/OpenProject.jpg)
 
-2. If you installed the VsCode extensions properly, you should see the command buttons on the lower bar:
+2. Open project Workspace
+
+ ![image](img/OpenWorkspace.jpg)
+
+3. Install required extensions Allow VsCode to install the required extensions
+
+ ![image](img/InstallExtensions.jpg)
+
+4. Once the VsCode extensions are installed properly, you should see the command buttons on the lower bar:
 
  ![image](img/bar.jpg)
 
-- You can use `Py Build` to build the project using Cmake and ninja build (faster than "make")
-- After build, you can flash the project to target using `Py Flash` command
-- After flashing, you can debug the project
+- `Py Menu` : Run Menuconfig
+    Note: Resize the VsCode console window to fit the menuconfig, otherwise the menuconfig will complain...
+- `Py Build` : Build the project using Cmake and ninja build (faster than "make")
+    Note: Allow VSCode to use cmd.exe when asked.
+    After this permision is granted, the menuconfig and build output will be shown on VsCode console window.
+- `Py Flash` : Flash the compiled file to target board.
+    Note: Flasher will open the first disponible com port for flashing.
+    If you have more than 1 com port on device manager, make sure the ESP32 download port has the lowest com number.
+- `Py Monitor` : Open serial monitor.
+    Note: Use CTRL+C to close the monitor
+- `Py Clean` : Clean the project.
 
 3. Happy Debugging:
 

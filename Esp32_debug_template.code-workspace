@@ -4,6 +4,19 @@
 			"path": "."
 		}
 	],
+	"extensions": {
+		"recommendations": [
+			"ms-vscode.cpptools",
+			"ms-python.python",
+			"twxs.cmake",
+			"eamodio.gitlens",
+			"mhutchie.git-graph",
+			"donjayamanne.githistory",
+			"seunlanlege.action-buttons",
+			"vscode-icons-team.vscode-icons",
+			"webfreak.debug"
+		]
+	},
 	"settings": {
 		"actionButtons": {
 			"defaultColor": "#ff0034",
