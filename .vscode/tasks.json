@@ -1,11 +1,27 @@
 {
-	"isShellCommand": true,
 	"tasks": [
 		{
 			"label": "OpenOCD",
 			"type": "shell",
 			"isBackground": true,
 			"command": "openocd -f interface/ftdi/esp32_devkitj_v1.cfg -f board/esp-wroom-32.cfg",
+			"problemMatcher": [
+        {
+          "pattern": [
+            {
+              "regexp": ".",
+              "file": 1,
+              "location": 2,
+              "message": 3
+            }
+          ],
+          "background": {
+            "activeOnStart": true,
+            "beginsPattern": ".",
+            "endsPattern": ".",
+          }
+        }
+      ]
 		  }
 	]
 }
