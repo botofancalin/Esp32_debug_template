@@ -83,17 +83,17 @@ Select “Load VCP” then click OK.
 
  ![image](img/bar.jpg)
 
-- `Py Menu` : Run Menuconfig
+- `Py Menu` : Run Menuconfig 
     Note: Resize the VsCode console window to fit the menuconfig, otherwise the menuconfig will complain...
-- `Py Build` : Build the project using Cmake and ninja build (faster than "make")
-    Note: Allow VSCode to use cmd.exe when asked.
-    After this permision is granted, the menuconfig and build output will be shown on VsCode console window.
-- `Py Flash` : Flash the compiled file to target board.
-    Note: Flasher will open the first disponible com port for flashing.
-    If you have more than 1 com port on device manager, make sure the ESP32 download port has the lowest com number.
-- `Py Monitor` : Open serial monitor.
-    Note: Use CTRL+C to close the monitor
-- `Py Clean` : Clean the project.
+- `Py Build` : Build the project using Cmake and ninja build (faster than "make") 
+    Note: Allow VSCode to use cmd.exe when asked. 
+    After this permision is granted, the menuconfig and build output will be shown on VsCode console window. 
+- `Py Flash` : Flash the compiled file to target board. 
+    Note: Flasher will open the first disponible com port for flashing. 
+    If you have more than 1 com port on device manager, make sure the ESP32 download port has the lowest com number. 
+- `Py Monitor` : Open serial monitor. 
+    Note: Use CTRL+C to close the monitor 
+- `Py Clean` : Clean the project. 
 
 3. Happy Debugging:
 
