@@ -86,7 +86,7 @@ Select “Load VCP” then click OK.
  ![image](img/bar.jpg)
 
 - `Py Menu` : Run Menuconfig  
-    Will open menuconfig on VsCode console window.
+    Will open menuconfig on VsCode console window.   
     Note:   Allow VSCode to use cmd.exe when asked.   
             After this permision is granted, the menuconfig and build output will be shown on VsCode console window.    
             Resize the VsCode console window to fit the menuconfig, otherwise the menuconfig will complain...   
