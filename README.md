@@ -87,6 +87,9 @@ Select “Load VCP” then click OK.
 
 - `Py Menu` : Run Menuconfig  
     Note: Resize the VsCode console window to fit the menuconfig, otherwise the menuconfig will complain...  
+
+ ![image](img/menuconfig.jpg)
+
 - `Py Build` : Build the project using Cmake and ninja build (faster than "make")  
     Note: Allow VSCode to use cmd.exe when asked.  
     After this permision is granted, the menuconfig and build output will be shown on VsCode console window.  
