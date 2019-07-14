@@ -45,6 +45,26 @@
 					"name": "Py clean",
 					"color": "white",
 					"command": "idf.py clean"
+				},
+				{
+					"name": "Clean",
+					"color": "yellow",
+					"command": "make clean"
+				},
+				{
+					"name": "Menuconfig",
+					"color": "lime",
+					"command": "make menuconfig"
+				},
+				{
+					"name": "Make",
+					"color": "orange",
+					"command": "make -j8"
+				},
+				{
+					"name": "Flash",
+					"color": "orange",
+					"command": "make flash"
 				}
 			]
 		},
