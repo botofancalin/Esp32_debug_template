@@ -1,7 +1,7 @@
 {
     "files.autoSave": "afterDelay",
     "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
-	"actionButtons": {
+    "actionButtons": {
         "defaultColor": "#ff0034", // Can also use string color names.
         "commands": [
             {
