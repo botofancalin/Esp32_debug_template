@@ -24,7 +24,7 @@
 				{
 					"name": "Py Menu",
 					"color": "lime",
-					"command": "idf.py menuconfig"
+					"command": "powershell idf.py menuconfig"
 				},
 				{
 					"name": "Py Build",
@@ -45,36 +45,10 @@
 					"name": "Py clean",
 					"color": "white",
 					"command": "idf.py clean"
-				},
-				{
-					"name": "Clean",
-					"color": "yellow",
-					"command": "make clean"
-				},
-				{
-					"name": "Menuconfig",
-					"color": "lime",
-					"command": "make menuconfig"
-				},
-				{
-					"name": "Make",
-					"color": "orange",
-					"command": "make -j8"
-				},
-				{
-					"name": "Flash",
-					"color": "orange",
-					"command": "make flash"
 				}
 			]
 		},
 		"terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
-		"workbench.iconTheme": "vscode-icons",
-		"files.associations": {
-			"freertos.h": "c",
-			"task.h": "c",
-			"sdkconfig.h": "c",
-			"gpio.h": "c"
-		}
+		"workbench.iconTheme": "vscode-icons"
 	}
 }

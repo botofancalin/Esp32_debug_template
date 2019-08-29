@@ -3,3 +3,4 @@ build
 .browse.*
 ipch
 *.old
+sdkconfig
