@@ -4,7 +4,7 @@
             "name": "Win32",
             "includePath": [
                 "${workspaceFolder}/**",
-                "${workspaceFolder}/build/config/**",
+                "${workspaceFolder}/build/config/*",
                 "${env:IDF_PATH}/components/**"
                 
             ],
@@ -16,7 +16,6 @@
             "cStandard": "c11",
             "cppStandard": "c++17",
             "compilerPath": "c:/Program Files/Espressif/ESP-IDF Tools/tools/bin/xtensa-esp32-elf-gcc.exe",
-            "intelliSenseMode": "clang-x64",
             "compileCommands": "${workspaceFolder}/build/compile_commands.json"
         }
     ],
