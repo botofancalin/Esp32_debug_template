@@ -7,7 +7,6 @@
 	"extensions": {
 		"recommendations": [
 			"ms-vscode.cpptools",
-			"ms-python.python",
 			"twxs.cmake",
 			"eamodio.gitlens",
 			"mhutchie.git-graph",
@@ -48,7 +47,7 @@
 				}
 			]
 		},
-		"terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
+		"terminal.integrated.shell.windows": "C:/Windows/System32/cmd.exe",
 		"workbench.iconTheme": "vscode-icons"
 	}
 }
